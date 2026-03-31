@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: radial-gradient(circle at 50% -20%, rgba(59, 130, 246, 0.15), transparent 60%),
+              radial-gradient(circle at -20% 120%, rgba(16, 185, 129, 0.1), transparent 50%),
+              var(--background);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.link {
+  color: var(--primary);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
